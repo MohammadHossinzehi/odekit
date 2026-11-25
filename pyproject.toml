@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "odekit"
+version = "1.0.0"
+description = "Adaptive, stiff and symplectic ODE integrators in pure Python with exact order verification"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+odekit = "odekit.__main__:main"
+
+[tool.setuptools]
+packages = ["odekit"]
